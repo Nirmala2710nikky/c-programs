@@ -1,0 +1,26 @@
+#include<stdio.h>
+void main()
+{
+ int t,n,i,count,temp,a[20];
+ printf("Enter the number of test cases: ");
+ scanf("%d",&t);
+ printf("Enter the limit of array: ");
+ scanf("%d",&n);
+ count=temp=0;
+ while(t>0)
+ {
+  for(i=0;i<n;i++)
+  {
+    scanf("%d",&a[i]);
+    if(a[i]%2==0)
+ 	count++;
+    else
+      temp++;
+  }
+      if(temp==count&&count==temp)
+		printf("Fancy number");
+   	else
+		printf("Not a Fancy number");
+      t--;
+ }
+}
